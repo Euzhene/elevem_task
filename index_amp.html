@@ -1,0 +1,354 @@
+<!doctype html>
+<html amp lang="en">
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Outdoor Clothing</title>
+    <link rel="canonical" href=".">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #007bff; /* Changed to blue */
+            color: #fff; /* Adjusted text color for better visibility */
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff; /* Adjusted for blue background */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff; /* Adjusted for blue background */
+        }
+
+        .cart {
+            font-size: 18px;
+            color: #fff; /* Adjusted */
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('https://automototravel.com/upload/wp/image009-6.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .arrow-down {
+            position: absolute;
+            bottom: 20px;
+            font-size: 24px;
+            color: #fff;
+        }
+
+        /* Category Selector */
+        .categories {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .categories > div {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Ensure horizontal layout with gap */
+        }
+
+        .categories label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            white-space: nowrap; /* Prevent wrapping */
+        }
+
+        .see-all {
+            background-color: #c9a96a;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Products Section */
+        .products {
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .product amp-img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product h3 {
+            font-size: 18px;
+            margin: 10px 0 5px;
+        }
+
+        .product .price {
+            font-size: 16px;
+            color: #c9a96a;
+        }
+
+        .sizes {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .size-circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid #ddd;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        /* About Us */
+        .about {
+            background-color: #c9a96a;
+            padding: 40px 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .about h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            border: 1px solid #fff;
+            display: inline-block;
+            padding: 10px 20px;
+        }
+
+        .about p {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-top {
+            background-color: #444;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .footer-columns {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footer-column {
+            flex: 1;
+        }
+
+        .footer-column h4 {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 5px;
+        }
+
+        .footer-column ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo"></div> 
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+            </ul>
+        </nav>
+        <div class="cart">🛒</div>
+    </header>
+
+    <section class="hero">
+        <h1>Our clothing, your comfort</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+        <div class="arrow-down">▼</div>
+    </section>
+
+    <section class="categories">
+        <div>
+            <label><input type="checkbox" checked> MEN</label>
+            <label><input type="checkbox"> WOMEN</label>
+            <label><input type="checkbox"> CHILDREN</label>
+        </div>
+        <a href="#" class="see-all">SEE ALL PRODUCTS</a>
+    </section>
+
+    <section class="products">
+        <h2 class="section-title">MEN</h2>
+        <div class="product-grid">
+            <div class="product">
+                <div class="sizes">
+                    <span>Size ▼</span>
+                    <div class="size-circle" style="background-color: blue;"></div>
+                    <div class="size-circle" style="background-color: yellow;"></div>
+                    <div class="size-circle" style="background-color: orange;"></div>
+                </div>
+                <amp-img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_qNZcRc3m4OMCKLAFdOPcr1_bUyaCieqMdQ&s" alt="T-Shirt" layout="responsive" width="200" height="300"></amp-img>
+                <h3>T-SHIRT</h3>
+                <p class="price">5.00 €</p>
+            </div>
+            <div class="product">
+                <div class="sizes">Size ▼</div>
+                <amp-img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgMTpVk1gvh5sGmmPeCEDnCRwFzDsHArVJHA&s" alt="Pants Forclaz" layout="responsive" width="200" height="300"></amp-img>
+                <h3>PANTS FORCLAZ</h3>
+                <p class="price">30.00 €</p>
+            </div>
+            <div class="product">
+                <amp-img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpTY-L24pAD59lUxL9U3xwUY6QLJF7zZIkPw&s" alt="Backpack" layout="responsive" width="200" height="300"></amp-img>
+                <h3>BACKPACK</h3>
+                <p class="price">60.00 €</p>
+                <p>10 LITRI</p>
+            </div>
+        </div>
+        <div class="pagination">
+            1/3 <span><</span> <span>></span>
+        </div>
+
+        <h2 class="section-title">WOMEN</h2>
+        <div class="product-grid">
+            <div class="product">
+                <div class="sizes">Size ▼</div>
+                <amp-img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRdIAdo1MoBM4SvKT9XD1K7hrApyg2QDUf7g&s" alt="Jacket" layout="responsive" width="200" height="300"></amp-img>
+                <h3>JACKET</h3>
+                <p class="price">60.00 €</p>
+            </div>
+            <div class="product">
+                <div class="sizes">Size ▼</div>
+                <amp-img src="https://wildcraft.com/media/catalog/product/1/_/1_2413_2.jpg?optimize=medium&bg-color=255%2C255%2C255&fit=cover&height=375&width=370&auto=webp&format=pjpg" alt="Trekking Shoes" layout="responsive" width="370" height="375"></amp-img>
+                <h3>TREKKING SHOES</h3>
+                <p class="price">80.00 €</p>
+            </div>
+            <div class="product">
+                <div class="sizes">Size ▼</div>
+                <amp-img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8UR60_mPvfJvSXSGI3lf47wilfd9rF3au5Q&s" alt="T-Shirt" layout="responsive" width="200" height="300"></amp-img>
+                <h3>T-SHIRT</h3>
+                <p class="price">20.00 €</p>
+            </div>
+        </div>
+        <div class="pagination">
+            1/3 <span><</span> <span>></span>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>ABOUT US</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            "E-commerce psd theme available"
+        </div>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h4>TRAINING</h4>
+                <ul>
+                    <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>HOSTING</h4>
+                <ul>
+                    <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>DESIGN</h4>
+                <ul>
+                    <li><a href="#">By Matveev Evgeniy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
